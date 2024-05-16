@@ -3,6 +3,14 @@ Based on: https://github.com/zauceee/PPLGPwn
 
 A method of executing PPPwn through rooted LGTV's
 
+>[!IMPORTANT]
+> me and [zauceee](https://github.com/zauceee) (aka kodeine) decided to work and focus on just one project, we have the same goals and working together we will have much more to offer than separately.
+> 
+> If you liked the project, consider following our most updated version at:
+https://github.com/zauceee/PPLGPwn
+> 
+> I will keep this project open but only as an option for just 1 firmware (11.00) or maybe for testing proposes.
+
 >`LIMITED SUPPORT` to [Fox Electronics](https://foxelectronics.rs/), u may need to [manually replace the pppwn binary](https://nightly.link/xfangfang/PPPwn_cpp/workflows/ci.yaml/main/aarch64-linux-musl.zip) if it is aarch64
 >
 > (thx to **Aljelja** for the feedback)
@@ -20,14 +28,6 @@ This method is using the C++ version of PPPwn, made by xfangxfang [PPPwn_cpp](ht
 > I can't test it (and consequently cant port to it) 'coz I don't have access to any of these devices :(
 ```
 ```
-
->[!IMPORTANT]
-> me and [zauceee](https://github.com/zauceee) (aka kodeine) decided to work and focus on just one project, we have the same goals and working together we will have much more to offer than separately.
-> 
-> If you liked the project, consider following our most updated version at:
-https://github.com/zauceee/PPLGPwn
-> 
-> I will keep this project open but only as an option for just 1 firmware (11.00) or maybe for testing proposes.
 
 ## I installed this version. Is there any compatibility issue with switching to the version from his repository?
 absolutely not, you can change if you wish.
