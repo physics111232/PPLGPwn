@@ -50,7 +50,11 @@ For more information of which firmwares are supported, visit the link above.
 
 ## How can I do it?
 
-use this step-by-step guide [![guide](https://img.youtube.com/vi/zYoesrUsIj8/0.jpg)](https://www.youtube.com/watch?v=zYoesrUsIj8)
+use one of this step-by-step guides
+
+[![guide](https://img.youtube.com/vi/BIeljeDINqk/0.jpg)](https://www.youtube.com/watch?v=BIeljeDINqk)[![guide](https://img.youtube.com/vi/zYoesrUsIj8/0.jpg)](https://www.youtube.com/watch?v=zYoesrUsIj8)
+
+
 and follow the instructions down bellow:
 
 Firstly you'll need to root your LGTV, the root itself it supported by a couple of models, check both exploits to see if your TV is capable of doing so, more steps on how to root it and activate SSH aswell are available there:
@@ -95,6 +99,8 @@ insert this lines in the last line (or after sshd server right under the "fi" if
 cd /media/internal/downloads/PPLGPwn-main
 ./start.sh
 ```
+if you prefer to start the exploit by pressing a key
+follow Modded's warfare step-by-step
 
 
 ### Alternative installer
@@ -107,12 +113,29 @@ curl -fsSL https://raw.githubusercontent.com/llbranco/PPLGPwn/master/install.sh 
 ```
 
 
+### Steps to fix bus error: (Thanks to Modded Warfare)
+you can check if the cpu archtecture of your tv is aarch64
+```
+uname -m
+```
+download the new binary
+```
+wget https://nightly.link/xfangfang/PPPwn_cpp/workflows/ci.yaml/main/aarch64-linux-musl.zip
+```
+unzip it
+```
+unzip aarch64-linux-musl.zip
+```
+```
+tar -xzvf pppwn.tar.gz
+```
+
 
 ### Connect your PS4 to your TV through the Ethernet port, and go in your PS4 set up LAN > PPPoE, and the exploit should be working!
 
 !! This exploit is made for TV's with the armv7, I'm unsure if it works on any other different arch, to know your TV chip architecture run ```uname -m``` !!
 
-!! This exploit stage2 runs SiStro load from usb payload !!
+!! This exploit stage2 runs SiStRo's payload !!
 
 ## Plans ( https://github.com/zauceee/PPLGPwn )
 - Installer ( probably something based on https://github.com/stooged/PI-Pwn installer )
