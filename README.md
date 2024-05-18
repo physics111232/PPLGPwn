@@ -66,34 +66,19 @@ Secondly, after you jailbreak your own TV (ironic on how we use a jailbroken TV 
 1.
 ```
 cd /media/internal/downloads
-``` 
-2.
-```
 wget https://github.com/llbranco/PPLGPwn/archive/refs/heads/main.zip
-```
-3.
-```
 unzip main.zip
-```
-4.
-```
 cd PPLGPwn-main
-```
-5.
-```
 chmod +x ./start.sh
-```
-6.
-```
 ./start.sh
 ```
-7.
+2.
 to make it run on the boot
 edit this file to make the script runs on boot
 ```
 /var/lib/webosbrew/startup.sh
 ```
-8.
+3.
 insert this lines in the last line (or after sshd server right under the "fi" if you prefer) save and reboot
 ```
 cd /media/internal/downloads/PPLGPwn-main
