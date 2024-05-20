@@ -33,6 +33,8 @@ This method is using the C++ version of PPPwn, made by xfangxfang [PPPwn_cpp](ht
 
 [Tom's Hardware](https://www.tomshardware.com/video-games/playstation/new-playstation-4-jailbreak-accomplished-using-select-lg-smart-tvs-running-webos)
 
+[Hackaday](https://hackaday.com/2024/05/16/you-can-now-jailbreak-a-ps4-with-an-lg-tv/)
+
 
 ## I installed this version. Is there any compatibility issue with switching to the version from his repository?
 absolutely not, you can change if you wish.
