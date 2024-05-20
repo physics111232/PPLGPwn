@@ -26,8 +26,13 @@ This method is using the C++ version of PPPwn, made by xfangxfang [PPPwn_cpp](ht
 > I'm not sure, I can't guarantee it, but I don't exclude the possibility
 > 
 > I can't test it (and consequently cant port to it) 'coz I don't have access to any of these devices :(
-```
-```
+> 
+
+## Articles
+[Wololo](https://wololo.net/2024/05/14/pplgpwn-hack-your-ps4-with-your-tv/)
+
+[Tom's Hardware](https://www.tomshardware.com/video-games/playstation/new-playstation-4-jailbreak-accomplished-using-select-lg-smart-tvs-running-webos)
+
 
 ## I installed this version. Is there any compatibility issue with switching to the version from his repository?
 absolutely not, you can change if you wish.
