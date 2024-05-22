@@ -29,15 +29,16 @@ This method is using the C++ version of PPPwn, made by xfangxfang [PPPwn_cpp](ht
 > 
 
 ## Articles
-[Wololo](https://wololo.net/2024/05/14/pplgpwn-hack-your-ps4-with-your-tv/)
+[Wololo](https://wololo.net/2024/05/14/pplgpwn-hack-your-ps4-with-your-tv/),
+[Tom's Hardware](https://www.tomshardware.com/video-games/playstation/new-playstation-4-jailbreak-accomplished-using-select-lg-smart-tvs-running-webos),
+[Hackaday](https://hackaday.com/2024/05/16/you-can-now-jailbreak-a-ps4-with-an-lg-tv/),
+[Adrenaline](https://www.adrenaline.com.br/games/tvs-da-lg-com-jailbreak-podem-desbloquear-o-ps4/),
+[Tudo Celular](https://www.tudocelular.com/tech/noticias/n221413/lg-tv-jailbreak-desbloqueio-ps4.html),
+[Guru3d](https://www.guru3d.com/story/exploiting-lg-smart-tvs-to-jailbreak-playstation-4-a-new-methodology/),
+[Hackster](https://www.hackster.io/news/this-hack-is-a-game-changer-9e6cf59f82ed),
+[Kotaku](https://kotaku.com/ps4-playstation-4-jailbreak-hack-lg-smart-tv-method-1851485229)
 
-[Tom's Hardware](https://www.tomshardware.com/video-games/playstation/new-playstation-4-jailbreak-accomplished-using-select-lg-smart-tvs-running-webos)
 
-[Hackaday](https://hackaday.com/2024/05/16/you-can-now-jailbreak-a-ps4-with-an-lg-tv/)
-
-[Adrenaline](https://www.adrenaline.com.br/games/tvs-da-lg-com-jailbreak-podem-desbloquear-o-ps4/)
-
-[Tudo Celular](https://www.tudocelular.com/tech/noticias/n221413/lg-tv-jailbreak-desbloqueio-ps4.html)
 
 ## I installed this version. Is there any compatibility issue with switching to the version from his repository?
 absolutely not, you can change if you wish.
