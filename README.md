@@ -35,6 +35,8 @@ This method is using the C++ version of PPPwn, made by xfangxfang [PPPwn_cpp](ht
 
 [Hackaday](https://hackaday.com/2024/05/16/you-can-now-jailbreak-a-ps4-with-an-lg-tv/)
 
+[Adrenaline](https://www.adrenaline.com.br/games/tvs-da-lg-com-jailbreak-podem-desbloquear-o-ps4/)
+
 
 ## I installed this version. Is there any compatibility issue with switching to the version from his repository?
 absolutely not, you can change if you wish.
