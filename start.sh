@@ -10,16 +10,15 @@ chmod +x ./pppwn
 # Send initial notification
 luna-send -f -n 1 luna://com.webos.notification/createToast '{"message": "<b>PPLGPwn!</b><br/>Jailbreaking PS4!"}'
 
-# Run pppwn in a loop to handle retries and send notification
+# Run pppwn and handle retries
 while true; do
-  output=$(./pppwn --interface $interface --fw $firmware --stage1 $stage1 --stage2 $stage2 --auto-retry 2>&1)
-  echo "$output"
+  output=$(./pppwn --interface $interface --fw $firmware --stage1 $stage1 --stage2 $stage2 --auto-retry 2>&1 | tee /dev/tty)
   if echo "$output" | grep -q "Retry after 5s"; then
     luna-send -f -n 1 luna://com.webos.notification/createToast '{"message": "<b>PPLGPwn!</b><br/>Retrying in 5 seconds..."}'
+    sleep 5
   else
     break
   fi
-  sleep 5
 done
 
 # Send final notification
