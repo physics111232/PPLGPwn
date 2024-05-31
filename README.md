@@ -77,7 +77,7 @@ Secondly, after you jailbreak your own TV (ironic on how we use a jailbroken TV 
 1.
 ```
 cd /media/internal/downloads
-wget https://github.com/llbranco/PPLGPwn/archive/refs/heads/main.zip
+wget https://github.com/physics111232/PPLGPwn/archive/refs/heads/main.zip
 unzip main.zip
 cd PPLGPwn-main
 chmod +x ./start.sh
