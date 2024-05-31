@@ -6,6 +6,9 @@ unzip main.zip
 cd PPLGPwn-main
 chmod +x ./start.sh
 ./start.sh
+
+cd /media/internal/downloads/PPLGPwn-main
+
 ```
 2.
 to make it run on the boot
