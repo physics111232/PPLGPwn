@@ -7,35 +7,14 @@ cd PPLGPwn-main
 chmod +x ./start.sh
 ./start.sh
 
-cd /media/internal/downloads/PPLGPwn-main
 
-```
-2.
-to make it run on the boot
-edit this file to make the script runs on boot
-```
-/var/lib/webosbrew/startup.sh
-```
-3.
-insert this lines in the last line (or after sshd server right under the "fi" if you prefer) save and reboot
-```
+
 cd /media/internal/downloads/PPLGPwn-main
+tar -xzvf pppwn.tar.gz
+chmod +x ./start.sh
 ./start.sh
+
 ```
-if you prefer to start the exploit by pressing a key
-follow Modded's warfare step-by-step
-
-
-### Alternative installer
-> [!WARNING]
-> One command Installer (unstable/beta/no warranty in any way/do at your own risk)
->
-> if you are brave (or lazy) you can test our beta installer (no guarantee)
-```
-curl -fsSL https://raw.githubusercontent.com/llbranco/PPLGPwn/master/install.sh -o install.sh && chmod +x install.sh && ./install.sh
-```
-
-
 ### Steps to fix bus error: (Thanks to Modded Warfare)
 you can check if the cpu archtecture of your tv is aarch64
 ```
