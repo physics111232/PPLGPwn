@@ -7,19 +7,9 @@ stage2=/media/internal/downloads/PPLGPwn-main/stage2_11.00.bin
 cd /media/internal/downloads/PPLGPwn-main
 chmod +x ./pppwn
 
-# Send initial notification
-luna-send -f -n 1 luna://com.webos.notification/createToast '{"message": "<b>PPLGPwn!</b><br/>Jailbreaking PS4!"}'
+# send nofification
+luna-send -f -n 1 luna://com.webos.notification/createToast '{"message": "<b>Starting Jailbreak..</b>"}'
 
-# Run pppwn and handle retries
-while true; do
-  output=$(./pppwn --interface $interface --fw $firmware --stage1 $stage1 --stage2 $stage2 --auto-retry 2>&1 | tee /dev/tty)
-  if echo "$output" | grep -q "Retry after 5s"; then
-    luna-send -f -n 1 luna://com.webos.notification/createToast '{"message": "<b>PPLGPwn!</b><br/>Retrying in 5 seconds..."}'
-    sleep 5
-  else
-    break
-  fi
-done
+./pppwn --interface $interface --fw $firmware --stage1 $stage1 --stage2 $stage2 --auto-retry
 
-# Send final notification
-luna-send -f -n 1 luna://com.webos.notification/createToast '{"message": "<b>PPLGPwn!</b><br/>PS4 SUCCESSFULLY JAILBROKEN!!"}'
+luna-send -f -n 1 luna://com.webos.notification/createToast '{"message": "<b>PS4 SUCCESSFULLY JAILBROKEN!!</b>"}'
