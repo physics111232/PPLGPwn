@@ -3,12 +3,12 @@ echo "Updated by llbranco"
 interface=eth0
 firmware=1100
 stage1=/media/internal/downloads/PPLGPwn-main/stage1.bin
-stage2=/media/internal/downloads/PPLGPwn-main/stage2.bin
+stage2=/media/internal/downloads/PPLGPwn-main/stage2_11.00.bin
 cd /media/internal/downloads/PPLGPwn-main
 chmod +x ./pppwn
 
 # send nofification
-luna-send -f -n 1 luna://com.webos.notification/createToast '{"message": "<b>PPLGPwn!</b><br/>Iniciando PS4 Jailbreak. <br/>by: llbranco, kodeine, & contributors"}'
+luna-send -f -n 1 luna://com.webos.notification/createToast '{"message": "<b>PPLGPwn!</b><br/>Starting PS4 Jailbreak.}'
 
 ./pppwn --interface $interface --fw $firmware --stage1 $stage1 --stage2 $stage2 --auto-retry
 
