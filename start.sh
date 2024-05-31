@@ -3,7 +3,7 @@ echo "Updated by llbranco"
 interface=eth0
 firmware=1100
 stage1=/media/internal/downloads/PPLGPwn-main/stage1.bin
-stage2=/media/internal/downloads/PPLGPwn-main/stage2.bin
+stage2=/media/internal/downloads/PPLGPwn-main/stage2_11.00.bin
 cd /media/internal/downloads/PPLGPwn-main
 chmod +x ./pppwn
 
