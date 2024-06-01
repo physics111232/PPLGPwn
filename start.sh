@@ -8,7 +8,7 @@ cd /media/internal/downloads/PPLGPwn-main
 chmod +x ./pppwn
 
 # send notification
-luna-send -f -n 1 luna://com.webos.notification/createToast '{"message": "<b>PPLGPwn!</b><br/>Starting PS4 Jailbreak."}'
+luna-send -f -n 1 luna://com.webos.notification/createToast '{"message": "<b>Starting Jailbreak...</b>"}'
 
 # retry logic
 while true; do
@@ -22,4 +22,4 @@ while true; do
 done
 
 # send success notification
-luna-send -f -n 1 luna://com.webos.notification/createToast '{"message": "<b>PPLGPwn!</b><br/>PS4 Jailbreak Success!!. <br/>"}'
+luna-send -f -n 1 luna://com.webos.notification/createToast '{"message": "<b>SUCCESSFULLY JAILBROKEN!!</b>"}'
