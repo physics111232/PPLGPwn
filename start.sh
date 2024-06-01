@@ -12,4 +12,4 @@ luna-send -f -n 1 luna://com.webos.notification/createToast '{"message": "<b>Sta
 
 ./pppwn --interface $interface --fw $firmware --stage1 $stage1 --stage2 $stage2 --auto-retry
 
-luna-send -f -n 1 luna://com.webos.notification/createToast '{"message": "<b>PS4 SUCCESSFULLY JAILBROKEN!!</b>"}'
+luna-send -f -n 1 luna://com.webos.notification/createToast '{"message": "<b>SUCCESSFULLY JAILBROKEN!</b>"}'
