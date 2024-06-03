@@ -1,19 +1,20 @@
 #!/bin/bash
 
-# Specify the full paths to the scripts
-script1="/media/internal/downloads/test-message/test1.sh"
-script2="/media/internal/downloads/test-message/test2.sh"
+# Define the script paths
+SCRIPT1="/media/internal/downloads/test-message/test1.sh"
+SCRIPT2="/media/internal/downloads/test-message/test2.sh"
 
-# Find and kill all processes related to script1
-pids1=$(ps aux | grep "$script1" | grep -v grep | awk '{print $2}')
-for pid in $pids1; do
-    kill -9 $pid
-done
+# Get the PIDs of the running scripts
+PIDS=$(ps -ef | grep -E "$SCRIPT1|$SCRIPT2" | grep -v grep | awk '{print $2}')
 
-# Find and kill all processes related to script2
-pids2=$(ps aux | grep "$script2" | grep -v grep | awk '{print $2}')
-for pid in $pids2; do
-    kill -9 $pid
-done
-
-echo "All processes for $script1 and $script2 have been killed."
+# Check if any PIDs were found
+if [ -z "$PIDS" ]; then
+    echo "No matching scripts are currently running."
+else
+    # Kill the processes
+    echo "Killing the following PIDs: $PIDS"
+    for PID in $PIDS; do
+        kill -9 $PID
+        echo "Killed process $PID"
+    done
+fi
