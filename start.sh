@@ -18,7 +18,7 @@ while true; do
         break
     fi
     # send retry notification
-    luna-send -f -n 1 luna://com.webos.notification/createToast '{"message": "<b>Retrying PS4 Jailbreak...</b>"}'
+    luna-send -f -n 1 luna://com.webos.notification/createToast '{"message": "<b>Stopping PS4 Jailbreak...</b>"}'
 done
 
 # send success notification
