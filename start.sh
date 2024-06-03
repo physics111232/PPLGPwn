@@ -12,7 +12,7 @@ luna-send -f -n 1 luna://com.webos.notification/createToast '{"message": "<b>Sta
 
 # retry logic
 while true; do
-    ./pppwn --interface $interface --fw $firmware --stage1 $stage1 --stage2 $stage2 --auto-retry --no-wait-padi
+    ./pppwn --interface $interface --fw $firmware --stage1 $stage1 --stage2 $stage2 --auto-retry
     RETRY_CODE=$?
     if [ $RETRY_CODE -eq 0 ]; then
         break
