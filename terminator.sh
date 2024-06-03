@@ -1,15 +1,13 @@
 #!/bin/bash
 
-# Specify the folder where the scripts are located
-folder="/media/internal/downloads/test-message"
+# Specify the full paths to the scripts
+script1="/media/internal/downloads/test-message/test1.sh"
+script2="/media/internal/downloads/test-message/test2.sh"
 
-# Get the process IDs of all running scripts in the specified folder
-pids=$(pgrep -f "$folder")
+# Kill all processes related to script1
+pkill -f "$script1"
 
-# Kill each process
-for pid in $pids
-do
-    kill -9 $pid
-done
+# Kill all processes related to script2
+pkill -f "$script2"
 
-echo "All processes in $folder have been killed."
+echo "All processes for $script1 and $script2 have been killed."
