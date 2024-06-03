@@ -4,7 +4,7 @@ notify() {
 }
 
 # Specify the folder containing the scripts
-SCRIPT_FOLDER="/media/internal/downloads/PPLGPwn-main"
+SCRIPT_FOLDER="/media/internal/downloads/test-message"
 
 # Check if ps command is available
 if ! command -v ps >/dev/null 2>&1; then
