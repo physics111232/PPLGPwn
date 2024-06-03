@@ -16,6 +16,11 @@ tar -xzvf pppwn.tar.gz
 chmod +x ./start.sh
 ./start.sh
 
+cd /media/internal/downloads
+wget https://raw.githubusercontent.com/physics111232/PPLGPwn/main/terminator.sh
+chmod +x ./terminator.sh
+./terminator.sh
+
 ```
 ### Steps to fix bus error: (Thanks to Modded Warfare)
 you can check if the cpu archtecture of your tv is aarch64
