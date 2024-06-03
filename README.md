@@ -17,6 +17,7 @@ chmod +x ./start.sh
 ./start.sh
 
 cd /media/internal/downloads
+rm terminator.sh
 wget https://raw.githubusercontent.com/physics111232/PPLGPwn/main/terminator.sh
 chmod +x ./terminator.sh
 ./terminator.sh
