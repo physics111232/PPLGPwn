@@ -3,14 +3,13 @@
 # Specify the folder where the scripts are located
 folder="/media/internal/downloads/test-message"
 
-# Find all running scripts in the specified folder
-running_scripts=$(ps aux | grep "$folder" | grep -v grep | awk '{print $2}')
+# Get the process IDs of all running scripts in the specified folder
+pids=$(pgrep -f "$folder")
 
-# Kill each running script
-for script_id in $running_scripts
+# Kill each process
+for pid in $pids
 do
-    kill -9 $script_id
+    kill -9 $pid
 done
 
-echo "All scripts in $folder have been killed."
-echo "All running scripts in $SCRIPT_FOLDER have been terminated."
+echo "All processes in $folder have been killed."
